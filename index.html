@@ -1,93 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="sergej, cv, resume">
-    <meta name="description" content="Sergey#s">
-    <title>resume</title>
+<div class="container">
 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="sergej, cv, resume">
+        <meta name="description" content="Sergey#s">
+        <title>resume</title>
+        <link rel="stylesheet" href="styles.css">
 
-<body>
-    <img src="imgs/myPick.png" width="200" alt="MyPick">
-    <h1>Sergey Zolotaroff</h1>
-    <p>Ich bin 40 Jahre alt und wohne seit 20 Jharen in <strong>Frankfurt am Main</strong></p>
-    <p>Ich möhcte gerne ein <em>Frontendentwickler</em> werden</p>
+    </head>
 
+    <body>
+        <div class="info">
+            <img src="imgs/myPick.png" alt="My Foto" class="avatar">
 
-    <h4>My Social Network:</h4>
+            <div class="info-text">
+                <h1>Sergey Zolotaroff</h1>
+                <p>Ich bin 40 Jahre alt und wohne seit 20 Jharen in <strong>Frankfurt am Main</strong></p>
+                <p>Ich möhcte gerne ein <em>Frontendentwickler</em> werden</p>
 
-    <p><a href="https://www.instagram.com/soft4llife/" target="_blank">Instagram</a>
-        &nbsp|&nbsp
-        <a href="" target="_blank">Telegram</a>
-        &nbsp|&nbsp
-        <a href="" target="_blank">WhatsApp</a>
-    </p>
-    <hr width="500" align="left">
+                <h4>Soziale Netzwerk:</h4>
 
-    <!-- HOBBY -->
-
-    <h2>My Hobbys:</h2>
-    <ul type="circle">
-        <li>Arbeiten Am PC</li>
-        <li>ChatBots Development</li>
-        <li>Web Design</li>
-        <li>Fitness</li>
-    </ul>
-
-    <hr width="500" align="left">
-
-    <!-- Berufserfahrung -->
-
-    <h2>Berufserfahrung</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Firmenname</th>
-                <th>Angestellt als</th>
-                <th>Von-Bis</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ComCave College</td>
-                <td>Fachinformatiker</td>
-                <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td>Adesso</td>
-                <td>Java Entwickler</td>
-                <td>2021-2022</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <!-- KONTAKTIEREN -->
-    <h2>Kontaktiere mich:</h2>
-    <form>
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Komplete Name eingeben">
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Bitte Email eingeben">
+                <a href="https://www.instagram.com/soft4llife/" target="_blank">Instagram</a>
+                &nbsp|&nbsp
+                <a href="" target="_blank">Telegram</a>
+                &nbsp|&nbsp
+                <a href="" target="_blank">WhatsApp</a>
+            </div>
         </div>
 
-        <div>
+        <!-- HOBBY -->
 
-            <label for="message">Ihre Nachricht:</label><br>
-            <textarea id="message" cols="30" rows="5" placeholder="Nachricht eingeben..."></textarea>
+        <div class="card">
+            <h2>My Hobbys:</h2>
+            <ul class="list">
+                <li>Arbeiten Am PC</li>
+                <li>ChatBots Development</li>
+                <li>Web Design</li>
+                <li>Fitness</li>
+            </ul>
         </div>
-        <button>Absenden</button>
-    </form>
+
+        <!-- Berufserfahrung -->
+
+        <div class="card">
+            <h2>Berufserfahrung</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firmenname</th>
+                        <th>Angestellt als</th>
+                        <th>Von - Bis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ComCave College</td>
+                        <td>Fachinformatiker</td>
+                        <td>2018-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Adesso</td>
+                        <td>Java Entwickler</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Adesso</td>
+                        <td>Java Entwickler</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Adesso</td>
+                        <td>Java Entwickler</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Skills -->
+        <div class="card">
+            <h2>Skills:</h2>
+            <ul class="Skills-list">
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>С#</li>
+                <li>Python</li>
+                <li>Angular</li>
+                <li>WordPress</li>
+                <li>WooCommerce</li>
+                <li>SQL</li>
+
+            </ul>
+        </div>
+
+        <!-- KONTAKTIEREN -->
 
 
 
-</body>
+
+        <form action="/" class="form">
+            <h2 class="h2-contact">Kontaktiere mich:</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Komplete Name eingeben">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Bitte Email eingeben">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ihre Nachricht:</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Nachricht eingeben..."></textarea>
+            </div>
+            <button class="btn">Absenden</button>
+        </form>
+
+
+
+    </body>
+</div>
 
 </html>
